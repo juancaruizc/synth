@@ -31,6 +31,7 @@ const NewCohort = () => {
                 Start Date <input className="h-10 rounded-sm" />
               </label>
             </div>
+
             {/* create new cohort button container */}
             <div className="flex justify-end w-4/5">
               <button className="px-6 py-2 text-sm text-black transition-colors duration-300 bg-white rounded-lg shadow-lg h-11 hover:bg-slate-300 shadow-orange-400 ">
