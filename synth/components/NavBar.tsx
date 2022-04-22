@@ -15,7 +15,7 @@ const NavBar = () => {
           </p>
         </div>
 
-        <div className="flex flex-row items-center justify-between w-1/6">
+        <div className="flex flex-row items-center w-24 justify-evenly">
           <p className="text-sm text-white">Juan</p>
           <Image src={downArrow} alt="down arrow" />
         </div>
