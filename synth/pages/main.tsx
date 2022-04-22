@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import NavBar from "../components/NavBar";
 
@@ -12,9 +13,11 @@ const Main = () => {
         {/* title container */}
         <div className="flex justify-between w-5/6 pt-16 pb-16 h-14 lg:w-3/5 ">
           <h1 className="flex justify-end h-full text-2xl text-white">Home</h1>
-          <button className="px-6 py-2 text-sm text-black transition-colors duration-300 bg-white rounded-lg shadow-lg h-11 hover:bg-slate-300 shadow-orange-400 ">
-            New Cohort
-          </button>
+          <Link href="/new-cohort" passHref>
+            <button className="px-6 py-2 text-sm text-black transition-colors duration-300 bg-white rounded-lg shadow-lg h-11 hover:bg-slate-300 shadow-orange-400 ">
+              New Cohort
+            </button>
+          </Link>
         </div>
 
         {/* Main top content container */}

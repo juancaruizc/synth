@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import SynthLogo from "../assets/synth-black-logo.svg";
 import downArrow from "../assets/down-arrow.svg";
@@ -9,7 +10,10 @@ const NavBar = () => {
     <div className="flex justify-center w-full bg-black">
       <div className="flex flex-row justify-between w-5/6">
         <div className="flex flex-row">
-          <Image src={SynthLogo} alt="synthesis white logo" />
+          <Link href="/main" passHref>
+            <Image src={SynthLogo} alt="synthesis white logo" />
+          </Link>
+
           <p className="flex items-center px-8 text-sm text-white">
             Availability
           </p>
