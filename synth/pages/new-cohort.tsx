@@ -21,14 +21,14 @@ const NewCohort = () => {
             {/* select cohort form */}
             <div className="flex flex-col justify-around w-4/5 items-centers h-5/6 lg:flex-row lg:justify-between lg:items-center lg:h-1/2">
               <label className="flex flex-col text-white lg:w-1/4">
-                Game <input className="h-10 rounded-sm" />
+                Game <input className="h-10 text-black rounded-sm" />
               </label>
 
               <label className="flex flex-col text-white lg:w-1/4">
-                Meeting Time <input className="h-10 rounded-sm" />
+                Meeting Time <input className="h-10 text-black rounded-sm" />
               </label>
               <label className="flex flex-col text-white lg:w-1/4">
-                Start Date <input className="h-10 rounded-sm" />
+                Start Date <input className="h-10 text-black rounded-sm" />
               </label>
             </div>
 
@@ -39,7 +39,7 @@ const NewCohort = () => {
               </button>
             </div>
           </div>
-          <p className="pt-4 text-sm text-white">Showing 0 matching cohorts</p>
+          <p className="pt-4 text-sm text-white">Showing 1 matching cohorts</p>
         </div>
 
         {/* available cohorts container */}
@@ -63,24 +63,27 @@ const NewCohort = () => {
                 {/* students */}
                 <div className="flex flex-col justify-center lg:w-32">
                   <h3 className="text-sm text-white lg:text-xl">Students</h3>
-                  <p className="text-sm text-slate-300 lg:text-lg">1:30 PM</p>
+                  <p className="text-sm text-slate-300 lg:text-lg">21</p>
                 </div>
 
+                {/* ages */}
                 <div className="flex flex-col justify-center lg:w-32">
                   <h3 className="text-sm text-white lg:text-xl">Ages</h3>
-                  <p className="text-sm text-slate-300 lg:text-lg">1:30 PM</p>
+                  <p className="text-sm text-slate-300 lg:text-lg">8-10</p>
                 </div>
 
                 {/* cohort */}
                 <div className="flex flex-col justify-center lg:w-32">
                   <h3 className="text-sm text-white lg:text-xl">Cohort</h3>
-                  <p className="text-sm text-slate-300 lg:text-lg">1:30 PM</p>
+                  <p className="text-sm text-slate-300 lg:text-lg">4749</p>
                 </div>
 
                 {/* start date */}
                 <div className="flex flex-col justify-center lg:w-32">
                   <h3 className="text-sm text-white lg:text-xl">Start Date</h3>
-                  <p className="text-sm text-slate-300 lg:text-lg">1:30 PM</p>
+                  <p className="text-sm text-slate-300 lg:text-lg">
+                    Monday, May 2, 2022
+                  </p>
                 </div>
 
                 {/* meeting time */}

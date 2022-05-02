@@ -10,7 +10,7 @@ const NavBar = () => {
     <div className="flex justify-center w-full bg-black">
       <div className="flex flex-row justify-between w-5/6">
         <div className="flex flex-row">
-          <Link href="/main" passHref>
+          <Link href="/" passHref>
             <Image src={SynthLogo} alt="synthesis white logo" />
           </Link>
 
