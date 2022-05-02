@@ -1,0 +1,21 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Cohort {
+  cohort_id         Int      @id @default(autoincrement())
+  game_name         String
+  students          Int
+  cohort_start_date DateTime
+  cohort_end_date   DateTime
+  cohort_start_time DateTime
+  facilitator_name  String
+}
